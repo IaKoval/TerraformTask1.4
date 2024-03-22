@@ -7,8 +7,7 @@ resource "datadog_monitor" "image_backoff" {
   notify_audit       = false
   
   monitor_thresholds {
-    warning  = 1
-    critical = 1
+    critical = 0
   }
   
   renotify_interval  = "10"
