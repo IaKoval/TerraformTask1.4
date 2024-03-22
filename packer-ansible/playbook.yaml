@@ -1,0 +1,8 @@
+---
+- name: Configure AMI
+  hosts: all
+  tasks:
+    - name: Install nginx
+      apt:
+        name: nginx
+        state: present
