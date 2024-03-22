@@ -7,6 +7,7 @@ terraform {
 }
 
 provider "datadog" {
+  api_url = "https://app.datadoghq.eu"
   api_key = "************************"
   app_key = "********************************"
 }
